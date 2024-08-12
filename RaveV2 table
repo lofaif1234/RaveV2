@@ -1,3 +1,4 @@
+script_key="";
 getgenv().RaveV2 = {
     ['Global'] = {
         ['Dead'] = true; -- Both lp and target
