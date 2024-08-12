@@ -1,0 +1,89 @@
+getgenv().RaveV2 = {
+    ['Global'] = {
+        ['Dead'] = true; -- Both lp and target
+        ['Grabbed'] = true;
+        ['Reload'] = true;
+        ['Wall'] = true;
+    };
+
+    ['Main'] = {
+        -- .gg/Ravecc
+        ['Toggled'] = true;
+        ['Threading'] = "RenderStepped";
+        ['UpdateTarget'] = false;
+        ['AntiFloorHit'] = false, 
+        ['Resolver'] = false,
+        ['Resolver Key'] = "K",
+        ['Prediction'] = 0.135;
+        ['anticurve'] = true;
+        -- .gg/Ravecc
+        ['Bind'] = {
+            ['Key'] = "C";
+            ['Mode'] = "Toggle"; -- Hold or Toggle
+        };
+        -- .gg/Ravecc
+        ['Offset'] = {
+            ['Toggled'] = false;
+            ['Jumping'] = {
+                ['Part'] = "Head"
+            };
+        };
+        -- .gg/Ravecc
+        ['Selected Part'] = {
+            ['Part'] = "HumanoidRootPart";
+            ['Closest Part'] = false
+        };
+        -- .gg/Ravecc
+        ['Properties'] = {
+            ['Smoothness'] = {
+                ['Factor'] = 1.2;
+                ['Smoothness'] = 0.03;
+            };
+        };
+    };
+
+    ['Silent Aim'] = { -- must have camlock on for it to work
+        ['Toggled'] = true;
+        ['Prediction'] = 0.135;
+        ['Dont Match Camlock'] = false;
+        ['Resolver'] = false,
+        ['Resolver Key'] = "K",
+        ['Anti Floor Hit'] = {
+            ['Toggled'] = true;
+            ['Interval'] = 2;
+            ['Only When Jumping'] = true;
+        };
+        -- .gg/Ravecc
+        ['Offset'] = {
+            ['Toggled'] = false;
+            ['Jumping'] = {
+                ['Part'] = "Head"
+            };
+        };
+        -- .gg/Ravecc
+        ['Selected Part'] = {
+            ['Part'] = "HumanoidRootPart";
+            ['Closest Part'] = false
+        };
+    };
+    ['Spin'] = {
+        ['Enabled'] = true,
+        ['Key'] = "V",
+        ['Speed'] = 4900,
+    },
+
+
+    -- .gg/Ravecc
+    ['Fov'] = {
+        ['Threading'] = "Heartbeat";
+        ['Shown'] = false;
+        ['Color'] = Color3.fromRGB(255,255,255),
+        ['Radius'] = 120;
+    };
+    ['Textures'] = {
+        ['Enabled'] = true,
+        ['Material'] = 'Brick',
+        ['Color'] = Color3.fromRGB(255, 255, 255),
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b1dc3b037d49171fa69d056029c30d20.lua"))()
